@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 2rem 5rem;
+}
+.box{
+    height: auto;
+    width: 100%;
+    border: 2px solid none;
+    box-shadow: 0 0 20px black;
+    background-image: linear-gradient(135deg, skyblue,whitesmoke);
+    border-radius: 10px;
+}
+.box h1{
+    border-bottom: 2px solid none;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, red,orange);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+textarea{
+    height: 2rem;
+    width: 80%;
+    margin-top: 2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+
+}
+button{
+    height: 2.2rem;
+    width: 15%;
+    margin-top: 2rem;
+    background-image: linear-gradient(to bottom,red,yellow);
+    border-radius: 5px;
+    font-weight: 700;
+}
+button:hover{
+    background-image: linear-gradient(to top,red,yellow);
+    cursor: pointer;
+}
+.tasklist{
+    margin-left: 1rem;
+    padding: 1rem;
+}
+.tasklist ul{
+    height: 1.5rem;
+    position: relative;
+    background-image: linear-gradient(to left, red,yellow);
+    color: black;
+    font-size: 19px;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid black;
+    margin: 1rem;
+}
+.tasklist ul i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:600px){
+    body{
+        margin: 2rem 0;
+    }
+}
